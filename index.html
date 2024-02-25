@@ -55,11 +55,20 @@
     <section>
         <div class="swiper slider--hero-showcase">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/img/slider/slider-1.jpg" class="w-100" alt="slider 1">
+                <div class="swiper-slide position-relative">
+                    <div class="container slider-hero-showcase">
+                        <div class="slider-hero-showcase-content">
+                            <span class="d-block font-family-two fs-2 text-mint">100% Natural Food</span>
+                            <span class="d-block fw-bold display-4 text-mint">Choose the best healthier way of life</span>
+                            <div class="section-link mt-4">
+                                <button class="btn btn-mint btn-gold">Explore Now <i class="icon icon-arrow"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/slider/slider-2.jpg" class="w-100" alt="slider 1">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/img/slider/slider-2.jpg" class="w-100" alt="slider 2">
+                    <img src="assets/img/slider/slider-1.jpg" class="w-100" alt="slider 2">
                 </div>
             </div>
         </div>
@@ -423,10 +432,6 @@
         });
         const sliderHeroShowcase = new Swiper(".slider--hero-showcase", {
             loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
         });
     </script>
 

@@ -18,6 +18,9 @@ body {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #7EB693;
 }
+.text-mint {
+    color: #274C5B;
+}
 .btn-mint {
     background-color: #274C5B;
     color: #fff;
@@ -26,8 +29,10 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 170px;
     transition: 300ms all;
+}
+.btn-mint .icon {
+    margin-right: 10px;
 }
 .btn-mint:hover {
     background-color: #193540;
@@ -35,6 +40,15 @@ body {
 }
 .btn-mint:hover .icon {
     margin-left: 10px;
+    margin-right: 0;
+}
+.btn-gold {
+    background-color: #EFD372;
+    color: #274C5B;
+}
+.btn-gold:hover {
+    background-color: #efdc96;
+    color: #274C5B;
 }
 .icon {
     display: inline-block;
@@ -292,3 +306,15 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.slider-hero-showcase-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(-120%, -50%);
+    max-width: 400px;
+    animation: heroSlider 600ms linear 300ms forwards;
+}
+@keyframes heroSlider {
+    from {transform: translate(-120%, -50%);}
+    to {transform: translate(0%, -50%);}
+  }
