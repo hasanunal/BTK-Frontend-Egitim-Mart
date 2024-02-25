@@ -12,6 +12,12 @@ body {
 .text-green {
     color: #7EB693;
 }
+.swiper-pagination-bullet {
+    background-color: #C4C4C4;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #7EB693;
+}
 .btn-mint {
     background-color: #274C5B;
     color: #fff;
